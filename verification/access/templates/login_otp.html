@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-5 pt-4 text-center">
+<h3 class="text-center py-4">OTP sent to your registered mobile number {{mobile}}</h3>
+{% if message %}
+    <div class="alert alert-{{class}}">
+      {{message}}
+    </div>
+    {% endif %}
+<form method="post">
+  {% csrf_token %}
+    <div class="form-group text-center">
+        <label for="exampleInputEmail1">Enter OTP</label>
+      <input type="text" class="form-control my-3" id="" aria-describedby="emailHelp" name="otp">
+      
+      <small id="emailHelp" class="form-text text-muted my-7">Never share your OTP with anyone.</small>
+    </div>
+    <p>Don't have an account <a href="{% url 'register' %}">Register</a></p>
+    <button type="submit" class="btn btn-primary my-4">Submit</button>
+  </form>
+</div>
+
+{% endblock %}

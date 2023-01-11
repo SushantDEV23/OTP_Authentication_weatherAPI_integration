@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-5 pt-4 text-center">
+<h3 class="text-center py-1">Login</h3>
+
+{% if message %}
+<div class="alert alert-{{class}}">{{message}}
+</div>
+{% endif %}
+<form method="post">
+  {% csrf_token %}
+    <div class="form-group text-center">
+
+      <label for="exampleInputEmail1"></label>
+      <input type="text" class="form-control my-1" id="mobile" aria-describedby="emailHelp" name="mobile" placeholder="Mobile">
+      
+    </div>
+    <p class="my-4">Already have an account <a href="{% url 'register' %}">Register</a></p>
+    <button type="submit" class="btn btn-primary my-1">Submit</button>
+  </form>
+</div>
+
+{% endblock %}

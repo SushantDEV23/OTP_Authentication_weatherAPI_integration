@@ -1,0 +1,13 @@
+api_key
+db.sqlite3
+__init.py
+__pycache__
+venv
+.log
+.pot
+.vscode/* 
+!.vscode/settings.json 
+!.vscode/tasks.json 
+!.vscode/launch.json 
+!.vscode/extensions.json 
+.history
