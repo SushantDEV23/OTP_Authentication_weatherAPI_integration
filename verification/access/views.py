@@ -125,7 +125,7 @@ def weather(request):
     # querystring = {"q":"London,uk"}
     # headers = {
     # 'x-rapidapi-host': "community-open-weather-map.p.rapidapi.com",
-    # 'x-rapidapi-key': "c675052da3msh3ac50e38b40d0a0p10cf90jsn54d6e82adfd5"
+    # 'x-rapidapi-key': "*****"
     # }
     # conn.request("GET",url,params=querystring, headers=headers)
     # res = conn.getresponse()
@@ -140,7 +140,7 @@ def weather(request):
     # conn = http.client.HTTPSConnection("community-open-weather-map.p.rapidapi.com")
 
     # headers = {
-    # 'X-RapidAPI-Key': "c675052da3msh3ac50e38b40d0a0p10cf90jsn54d6e82adfd5",
+    # 'X-RapidAPI-Key': "*********",
     # 'X-RapidAPI-Host': "community-open-weather-map.p.rapidapi.com"
     # }
 
